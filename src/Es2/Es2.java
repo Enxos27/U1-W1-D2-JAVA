@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Es2 {
     static void main() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Inserisci un numero tra 1 e 3 per stampare le sue lettere");
+        System.out.println("Inserisci un numero tra 0 e 3 per stampare le sue lettere");
         int n = Integer.parseInt(scanner.nextLine());
         Es2 es2 = new Es2();
         es2.stampaLettere(n);
@@ -18,6 +18,7 @@ public class Es2 {
 
     public void stampaLettere(int n) {
         switch (n) {
+            case 0 -> System.out.println("Z E R O");
             case 1 -> System.out.println("U N O");
             case 2 -> System.out.println("D U E");
             case 3 -> System.out.println("T R E");
